@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.x.rtapp.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_main_activity"
+            app:destination="@id/main_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_activity"
+        android:name="com.x.rtapp.main_activity"
+        android:label="fragment_main_activity"
+        tools:layout="@layout/fragment_main_activity" >
+        <action
+            android:id="@+id/action_main_activity_to_blog"
+            app:destination="@id/blog" />
+        <action
+            android:id="@+id/action_main_activity_to_live_chat"
+            app:destination="@id/live_chat" />
+        <action
+            android:id="@+id/action_main_activity_to_report"
+            app:destination="@id/report" />
+    </fragment>
+    <fragment
+        android:id="@+id/blog"
+        android:name="com.x.rtapp.blog"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" />
+    <fragment
+        android:id="@+id/live_chat"
+        android:name="com.x.rtapp.live_chat"
+        android:label="fragment_live_chat"
+        tools:layout="@layout/fragment_live_chat" />
+    <fragment
+        android:id="@+id/report"
+        android:name="com.x.rtapp.report"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+</navigation>

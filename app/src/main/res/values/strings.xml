@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">rtApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in">Log In</string>
+    <string name="make_a_call">Make A Call</string>
+    <string name="report_a_problem">Report A Problem</string>
+    <string name="live_chat">Live Chat</string>
+    <string name="blog">Blog</string>
 </resources>
